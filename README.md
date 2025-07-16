@@ -1,3 +1,6 @@
+# Cinemtica-Directa-Phantom-X
+
+
 Se desarrollo un codigo que permite a traves de una interfaz grafica, elegir 5 posiciones predeterminadas para el manipulador Phantom X Pincher, ademas tambien permite ingresar los valores de posicion de las articulaciones para llegar a una Pose personalizada.
 
 Para el desarrollo de dicho codigo se hace uso de dos modulos, el primero es "pincher_gui1.py", el cual  permite controlar el brazo robótico desde una interfaz gráfica creada con tkinter y a traves de esta elegir usar posiciones predeterminadas o personalizadas.
