@@ -21,7 +21,25 @@ Las principales funciones usadas son:
   Cambia la posición del brazo robótico a una nueva configuración de posiciones (lista de 5 valores), a traves de actualizar self.goal_positions, este cambio se realiza un servo a la vez hasta finalizar la configuracion y muestra en la consola los valores de cada servo.
 
 Diagrama de flujo del funcionamiento del programa:
-<img width="3840" height="2829" alt="Diagrama de flujo-Lab4" src="https://github.com/user-attachments/assets/8ad69666-2e1c-4486-8269-7ed241091839" />
+```   mermaid
+  flowchart TD
+    A[Start] --> B(Inicializar Cominicación)
+    B --> C{Pulsar Botón}
+    C -->|Escribir posición deseada| D[Mover a posición personalizada]
+    C --> E[Posición 1]
+    C --> F[Posición 2]
+    C --> G[Posición 3]
+    C --> H[Posición 4]
+    C --> I[Posición 5]
+    D --> J[Esperar Terminación del movimiento]
+    E --> J
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+    J --> C
+```
+
 
 
 
